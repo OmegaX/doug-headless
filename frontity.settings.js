@@ -33,7 +33,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://www.dougsabiston.com"
+          "url": "https://headless.dougsabiston.com"
         }
       }
     },
