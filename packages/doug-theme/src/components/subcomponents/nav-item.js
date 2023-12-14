@@ -1,7 +1,7 @@
 import Link from "@frontity/components/link";
 import { styled, connect } from "frontity"
 
-const theme = require('sass-extract-loader?{"plugins":["sass-extract-js"]}!../sass/variables.scss');
+const theme = {}
 
 const NavItem = ({ href, onClick, content }) => {
 
@@ -15,7 +15,7 @@ const NavItem = ({ href, onClick, content }) => {
 
 	return (
 		<Item itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement">
-				{component}        
+			{component}        
 		</Item>
 	)
 }
@@ -56,5 +56,3 @@ const StyledButton = styled.button`
 const StyledLink = styled(Link)`
 	${linkStyles}
 `;
-
-

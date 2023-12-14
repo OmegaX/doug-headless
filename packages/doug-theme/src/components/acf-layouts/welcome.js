@@ -1,10 +1,9 @@
 import React from "react"
 import { connect, styled, css } from "frontity"
-import Animation from 'react-reveal/Fade';
 import Container from "../subcomponents/container"
 import Button from "../subcomponents/button"
 
-const theme = require('sass-extract-loader?{"plugins":["sass-extract-js"]}!../sass/variables.scss');
+const theme = {};
 
 const Component = ({ state, actions, data }) => {
 
@@ -13,15 +12,9 @@ const Component = ({ state, actions, data }) => {
 			<GraphicBG css={css`background-image: url(${data.bg_image})`}></GraphicBG>
 			<Container>
 				<Content>
-					<Animation duration={1000}>
-						<Heading>{data.heading}</Heading>
-					</Animation>
-					<Animation duration={1000}>
-						<div dangerouslySetInnerHTML={{ __html: data.content }} />
-					</Animation>
-					<Animation duration={1000}>
-						<Button onClick={actions.theme.openContactModal} content="Contact" />
-					</Animation>
+					<Heading>{data.heading}</Heading>
+					<div dangerouslySetInnerHTML={{ __html: data.content }} />
+					<Button onClick={actions.theme.openContactModal} content="Contact" />
 				</Content>
 			</Container>	
 		</Welcome>

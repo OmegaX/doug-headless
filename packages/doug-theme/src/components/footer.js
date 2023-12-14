@@ -3,11 +3,10 @@ import Link from "@frontity/components/link";
 import Container from './subcomponents/container';
 import SVGVancouver from './svgs/vancouver-skyline';
 import SVGQuote from './svgs/quote';
-import Fade from 'react-reveal/Fade';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-const theme = require('sass-extract-loader?{"plugins":["sass-extract-js"]}!./sass/variables.scss');
+const theme = {};
 
 const Component = ({ state, libraries }) => {
 	const options = state.source.get("acf-options-page").acf;
@@ -19,7 +18,6 @@ const Component = ({ state, libraries }) => {
 	return (
 		<>
 		<Footer>
-		<Fade duration={2000}>
 			<Upper>
 				<UpperBG><SVGVancouver /></UpperBG>
 				<Container>
@@ -68,8 +66,7 @@ const Component = ({ state, libraries }) => {
 					</UpperRow>
 				</Container>
 			</Upper>
-			</Fade>
-			<Fade delay={300} duration={2000}>
+		
 			<Lower>
 				<LowerBG><SVGVancouver /></LowerBG>
 				<Container>
@@ -84,7 +81,6 @@ const Component = ({ state, libraries }) => {
 					</LowerRow>
 				</Container>
 			</Lower>
-			</Fade>
 		</Footer>
 		</>
 	);

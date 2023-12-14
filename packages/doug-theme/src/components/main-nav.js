@@ -7,7 +7,7 @@ import Container from './subcomponents/container'
 import NavItem from './subcomponents/nav-item'
 import NavContact from './subcomponents/contact'
 
-const theme = require('sass-extract-loader?{"plugins":["sass-extract-js"]}!./sass/variables.scss');
+const theme = {};
 
 const MainNav = ({ state }) => {
 	const items = state.source.get(`/menu/${state.theme.menuUrl}/`).items;

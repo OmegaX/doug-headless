@@ -1,6 +1,6 @@
 import { styled, connect } from "frontity";
 
-const theme = require('sass-extract-loader?{"plugins":["sass-extract-js"]}!../sass/variables.scss');
+const theme = {}
 
 const Component = ({ children }) => {
 	return (
@@ -24,4 +24,4 @@ const Container = styled.div`
 	}
 `;
 
-export default connect(Container) 
+export default connect(Container)

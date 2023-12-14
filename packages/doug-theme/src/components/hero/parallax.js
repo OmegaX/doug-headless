@@ -4,7 +4,7 @@ import { Parallax } from 'react-parallax';
 import ButtonLink from "../subcomponents/button-link";
 import Container from '../subcomponents/container';
 
-const theme = require('sass-extract-loader?{"plugins":["sass-extract-js"]}!../sass/variables.scss');
+const theme = {};
 
 const Component = ({ state }) => {
 	const data = state.source.get(state.router.link);
@@ -35,7 +35,6 @@ const Component = ({ state }) => {
 			bg_img: page.acf.parallax.bg_img,
 			link: page.acf.parallax.link,
 		}
-		
 	}
 	Object.assign(content, { ...newContent });
 

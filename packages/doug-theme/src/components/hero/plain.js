@@ -2,7 +2,7 @@ import React from "react"
 import Container from '../subcomponents/container';
 import { connect, styled, css } from "frontity"
 
-const theme = require('sass-extract-loader?{"plugins":["sass-extract-js"]}!../sass/variables.scss');
+const theme = {}
 
 const Plain = ({ state, post }) => {
 

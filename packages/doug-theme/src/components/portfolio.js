@@ -6,9 +6,8 @@ import FeaturedMedia from "./subcomponents/featured-media"
 import ButtonLink from "./subcomponents/button-link"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapSigns } from '@fortawesome/free-solid-svg-icons'
-import Fade from 'react-reveal/Fade';
 
-const theme = require('sass-extract-loader?{"plugins":["sass-extract-js"]}!./sass/variables.scss');
+const theme = {};
 
 const Component = ({ state }) => {
 	const data = state.source.get(state.router.link)
@@ -18,11 +17,9 @@ const Component = ({ state }) => {
 		<Portfolio>
 			<Container>
 				<Content>
-					<Fade duration={1000}>
-						<ImageWrap>
-							<FeaturedMedia id={item.featured_media} />
-						</ImageWrap>
-					</Fade>
+					<ImageWrap>
+						<FeaturedMedia id={item.featured_media} />
+					</ImageWrap>
 					<h2>{item.acf.subheading}</h2>
 					<div dangerouslySetInnerHTML={{ __html: item.acf.wysiwyg }} />
 					<StyledButtonLink href={item.acf.site_link.url} target="_blank" rel="noopener">

@@ -6,7 +6,7 @@ import { faWindowClose } from '@fortawesome/free-solid-svg-icons'
 import NavItem from './nav-item'
 import Container from './container'
 
-const theme = require('sass-extract-loader?{"plugins":["sass-extract-js"]}!../sass/variables.scss');
+const theme = {}
 
 Modal.setAppElement('#root')
 

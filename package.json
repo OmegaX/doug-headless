@@ -25,8 +25,10 @@
     "@frontity/tiny-router": "^1.4.4",
     "@frontity/wp-source": "^1.11.7",
     "doug-theme": "file:packages/doug-theme",
+    "framer-motion": "^10.16.16",
     "frontity": "^1.17.2",
     "react-modal": "^3.16.1",
-    "react-parallax": "^3.5.1"
+    "react-parallax": "^3.5.1",
+    "react-sticky-el": "^2.1.0"
   }
 }

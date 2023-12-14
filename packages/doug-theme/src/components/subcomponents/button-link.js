@@ -1,7 +1,7 @@
 import Link from "@frontity/components/link";
 import { styled, connect } from "frontity"
 
-const theme = require('sass-extract-loader?{"plugins":["sass-extract-js"]}!../sass/variables.scss');
+const theme = {}
 
 const ButtonLink = ({ href, className, children, target, rel }) => (
 	<StyledLink link={href} className={className} target={target} rel={rel}>

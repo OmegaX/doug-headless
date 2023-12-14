@@ -12,7 +12,7 @@ import MainNav from "./main-nav"
 import PageError from "./page-error"
 import Loading from "./loading"
 
-const theme = require('sass-extract-loader?{"plugins":["sass-extract-js"]}!./sass/variables.scss');
+const theme = {};
 
 const Root = ({ state }) => {
 	const data = state.source.get(state.router.link)
