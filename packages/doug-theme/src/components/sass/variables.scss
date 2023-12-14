@@ -1,0 +1,187 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+
+//
+// Color system
+//
+
+$gray-100: #fcfafa;
+$gray-200: #ECECEC;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #040404;
+
+$black:    darken($gray-900, 5%);
+$white:    $gray-100;
+$orange:   #eb7200;
+$blue:     #20528d;
+$l-orange: lighten($orange, 8%);
+$l-blue:   lighten($blue, 15%);
+$d-blue:   darken($blue, 15%);
+$primary:       $black;
+$secondary:     $orange;
+$success:       $black;
+$info:          $black;
+$warning:       $orange;
+$danger:        $orange;
+$light:         $gray-200;
+$dark:          $gray-800;
+
+$body-bg:                   $white;
+$body-color:                $black;
+
+$link-color:                $primary;
+$link-decoration:           none;
+$link-hover-color:          $link-color;
+$link-hover-decoration:     none;
+
+$spacer: 1rem;
+
+$paragraph-margin-bottom: $spacer;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+
+$container-max-width: 1400px;
+
+$border-width:                .5px;
+$border-color:                $black;
+
+$border-radius:               .1rem;
+
+$box-shadow:                  0;
+
+$transition-base:             all .4s ease-in-out;
+
+$font-family-sans-serif:      'Yantramanav', sans-serif;
+$font-family-serif:           'Cherry Cream Soda', cursive;
+$font-family-base:            $font-family-sans-serif;
+
+$font-size-base:              $spacer;
+$font-size-xl:                ($font-size-base * 1.35);
+$font-size-lg:                ($font-size-base * 1.15);
+$font-size-sm:                ($font-size-base * .85);
+$font-size-xs:                ($font-size-base * .75);
+
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
+
+$font-weight-base:            $font-weight-normal;
+$line-height-base:            1.5;
+
+$h1-font-size:                $font-size-base * 2.25;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.5;
+$h4-font-size:                $font-size-xl;
+$h5-font-size:                $font-size-lg;
+$h6-font-size:                $font-size-base;
+
+$headings-margin-bottom:      $spacer;
+$headings-font-family:        $font-family-serif;
+$headings-font-weight:        $font-weight-bold;
+$headings-line-height:        1.2;
+$headings-color:              inherit;
+
+$input-btn-padding-y:         1.25rem;
+$input-btn-padding-x:         2rem;
+$input-btn-font-family:       $font-family-serif;
+$input-btn-font-size:         $font-size-lg;
+$input-btn-line-height:       $line-height-base;
+$input-btn-border-width:      $border-width;
+
+$btn-padding-y:               $input-btn-padding-y;
+$btn-padding-x:               $input-btn-padding-x;
+$btn-font-family:             $input-btn-font-family;
+$btn-font-size:               $input-btn-font-size;
+$btn-line-height:             $input-btn-line-height;
+$btn-white-space:             null; // Set to `nowrap` to prevent text wrapping
+
+$btn-border-width:            $input-btn-border-width;
+
+$btn-font-weight:             $font-weight-bold;
+$btn-box-shadow:              none;
+$btn-focus-box-shadow:        none;
+$btn-active-box-shadow:       none;
+
+$btn-link-disabled-color:     $gray-600;
+
+$btn-block-spacing-y:         .5rem;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           $border-radius;
+
+$btn-transition:              all .5s ease-in-out;
+
+
+// Forms
+
+$label-margin-bottom:                   .5rem;
+
+
+
+$input-padding-top:                       .5rem;
+$input-padding-bottom:                    .5rem;
+$input-padding-left:                      0;
+$input-padding-right:                     1rem;
+
+$input-font-family:                     $font-family-sans-serif;
+$input-font-size:                       $input-btn-font-size;
+$input-font-weight:                     $font-weight-base;
+$input-line-height:                     $input-btn-line-height;
+
+$input-bg:                              transparent;
+$input-disabled-bg:                     $gray-200;
+
+$input-color:                           $black;
+$input-border-color:                    $border-color;
+$input-border-width:                    $border-width;
+$input-box-shadow:                      none;
+
+$input-border-radius:                   $border-radius;
+
+$input-focus-bg:                        $input-bg;
+$input-focus-border-color:              $orange;
+$input-focus-color:                     $input-color;
+$input-focus-box-shadow:                0;
+
+$input-placeholder-color:               $gray-700;
+$input-plaintext-color:                 $body-color;
+
+$input-height-border:                   $input-border-width * 2;
+
+$input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+$form-text-margin-top:                  .25rem;
+
+$nav-height-sm: 60px;
+$nav-height-lg: 86px;
+$nav-link-padding-y:                .5rem;
+$nav-link-padding-x:                .75rem;
+$nav-link-disabled-color:           $gray-600;
+
+$navbar-padding-y:                  .5rem;
+$navbar-padding-x:                  0;
+
+$modal-inner-padding:               1rem;
+$modal-content-bg:                  $white;
+$modal-content-border-color:        rgba($black, .2);
+$modal-content-border-width:        $border-width;
+$modal-content-border-radius:       $border-radius;
+$modal-backdrop-bg:                 $black;
+$modal-backdrop-opacity:            .5;
+$modal-header-padding:              1rem;

@@ -1,0 +1,32 @@
+{
+  "name": "dougsabiston-headless",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontity project",
+  "keywords": [
+    "frontity"
+  ],
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "scripts": {
+    "dev": "frontity dev",
+    "build": "frontity build",
+    "serve": "frontity serve"
+  },
+  "prettier": {},
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@frontity/core": "^1.16.0",
+    "@frontity/html2react": "^1.7.0",
+    "@frontity/tiny-router": "^1.4.4",
+    "@frontity/wp-source": "^1.11.7",
+    "doug-theme": "file:packages/doug-theme",
+    "frontity": "^1.17.2",
+    "react-modal": "^3.16.1",
+    "react-parallax": "^3.5.1"
+  }
+}
